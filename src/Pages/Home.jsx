@@ -1,14 +1,17 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import girlImage from "../assets/hero.png";
-import { CalendarRange, Mail, Play } from 'lucide-react';
+import { ArrowRightLeft, ArrowUpRight, CalendarRange, Mail, Play } from 'lucide-react';
 import student from '../assets/student.webp'
+import StatsSection from '../Components/State/State';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
         <>
-        <title>Welcom College Skill</title>
+            <title>Welcom College Skill</title>
             <Navbar />
+            {/* Hero section  */}
             <section className="bg-brand-background lg:px-16 px-10 py-16 grid md:grid-cols-2 items-center">
                 <div className="space-y-6">
                     <h1 className="text-4xl md:text-6xl font-bold text-brand-text font-oswald">
@@ -62,6 +65,22 @@ function Home() {
                     </div>
                 </div>
             </section>
+            {/* Counts State  */}
+            <StatsSection />
+            {/* How We Work */}
+            <section className='container px-10 lg:px-16'>
+                <h4 className='text-brand-primary'>// How We Work</h4>
+                <div className="flex flex-col md:flex-row py-6 md:py-10 justify-between items-center gap-4">
+                    <h2 className='text-4xl md:text-6xl text-brand-text font-oswald font-medium'>
+                        Step by step process for <br />
+                        <span className='text-brand-primary block mt-2'>achieving success</span>
+                    </h2>
+                    <Link to='/contact' className='flex justify-center items-center font-medium text-brand-background border bg-brand-primary border-brand-primary px-4 py-2 rounded-md mt-4 md:mt-0'>
+                        Contact Us <ArrowUpRight className="ml-2" />
+                    </Link>
+                </div>
+            </section>
+
         </>
     )
 }
