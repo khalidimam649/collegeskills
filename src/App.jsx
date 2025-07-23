@@ -2,12 +2,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Courses from './pages/Courses';
 import Contact from './Pages/Contact';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Purchase from './pages/Purchase';
-import AdminDashboard from './pages/AdminDashboard';
+import SoftSkills from './Pages/SoftSkills';
+import CorporateTraining from './Pages/CorporateTraining';
+import B2BOutsourcing from './Pages/B2BOutsourcing';
+import CourseForColleges from './Pages/CourseForColleges';
+import CourseForCorprates from './Pages/CourseForCorprates';
+import Testimonial from './Pages/Testimonial';
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/courses" element={<Courses />} />
+        <Route path="/services/soft-skills" element={<SoftSkills />} />
+        <Route path="/services/corporate-training" element={<CorporateTraining />} />
+        <Route path="/services/b2b" element={<B2BOutsourcing />} />
+        <Route path="/courses/for-colleges" element={<CourseForColleges />} />
+        <Route path="/courses/for-corporate" element={<CourseForCorprates />} />
+        <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/purchase/:courseId" element={<Purchase />} />
-        <Route path="/admin/dashboard" element={<AdminDashboard />} />
       </Routes>
     </Router>
   );
