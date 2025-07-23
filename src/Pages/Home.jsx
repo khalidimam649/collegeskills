@@ -7,6 +7,7 @@ import student from '../assets/student.webp'
 function Home() {
     return (
         <>
+        <title>Welcom College Skill</title>
             <Navbar />
             <section className="bg-brand-background lg:px-16 px-10 py-16 grid md:grid-cols-2 items-center">
                 <div className="space-y-6">
