@@ -1,7 +1,4 @@
-// App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
 import Contact from './Pages/Contact';
 import SoftSkills from './Pages/SoftSkills';
 import CorporateTraining from './Pages/CorporateTraining';
@@ -9,6 +6,8 @@ import B2BOutsourcing from './Pages/B2BOutsourcing';
 import CourseForColleges from './Pages/CourseForColleges';
 import CourseForCorprates from './Pages/CourseForCorprates';
 import Testimonial from './Pages/Testimonial';
+import Home from './Pages/Home';
+import About from './Pages/About';
 
 function App() {
   return (
