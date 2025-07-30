@@ -17,7 +17,7 @@ import teamImage from '../assets/team.jpg';
 import Testimonial from '../Components/Testimonial/Testimonial';
 import Blog from '../Components/Blog/Blog';
 import FAQs from '../Components/Faq/Faq';
-import Pricing from '../Components/Pricing/Pricing';
+import Pricing from '../Components/Pricing';
 import Footer from '../Components/Footer/Footer';
 
 function Home() {
